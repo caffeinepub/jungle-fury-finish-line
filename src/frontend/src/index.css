@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Jungle theme colors - light mode */
+        --background: 0.95 0.08 145;
+        --foreground: 0.25 0.06 145;
+        --card: 0.98 0.05 145;
+        --card-foreground: 0.25 0.06 145;
+        --popover: 0.98 0.05 145;
+        --popover-foreground: 0.25 0.06 145;
+        --primary: 0.45 0.15 145;
+        --primary-foreground: 0.98 0.05 145;
+        --secondary: 0.85 0.08 145;
+        --secondary-foreground: 0.25 0.06 145;
+        --muted: 0.88 0.06 145;
+        --muted-foreground: 0.50 0.08 145;
+        --accent: 0.75 0.18 85;
+        --accent-foreground: 0.20 0.08 145;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.05 145;
+        --border: 0.80 0.10 145;
+        --input: 0.80 0.10 145;
+        --ring: 0.60 0.12 145;
+        
+        /* Custom jungle colors */
+        --jungle-dark: 0.20 0.12 145;
+        --jungle-card: 0.35 0.12 145;
+        --jungle-light: 0.75 0.08 145;
+        --jungle-bright: 0.85 0.15 85;
+        --jungle-accent: 0.75 0.18 85;
+        --jungle-muted: 0.55 0.08 145;
+        --jungle-success: 0.70 0.18 145;
+        
+        --chart-1: 0.65 0.18 145;
+        --chart-2: 0.70 0.15 85;
+        --chart-3: 0.60 0.12 45;
+        --chart-4: 0.75 0.18 120;
+        --chart-5: 0.68 0.16 165;
+    }
+
+    .dark {
+        --background: 0.18 0.10 145;
+        --foreground: 0.92 0.05 145;
+        --card: 0.25 0.12 145;
+        --card-foreground: 0.92 0.05 145;
+        --popover: 0.22 0.12 145;
+        --popover-foreground: 0.92 0.05 145;
+        --primary: 0.75 0.15 85;
+        --primary-foreground: 0.20 0.10 145;
+        --secondary: 0.30 0.12 145;
+        --secondary-foreground: 0.92 0.05 145;
+        --muted: 0.32 0.10 145;
+        --muted-foreground: 0.65 0.08 145;
+        --accent: 0.75 0.18 85;
+        --accent-foreground: 0.20 0.10 145;
+        --destructive: 0.60 0.22 25;
+        --destructive-foreground: 0.92 0.05 145;
+        --border: 0.35 0.12 145;
+        --input: 0.35 0.12 145;
+        --ring: 0.65 0.12 145;
+        
+        /* Custom jungle colors - dark mode */
+        --jungle-dark: 0.15 0.12 145;
+        --jungle-card: 0.28 0.12 145;
+        --jungle-light: 0.75 0.08 145;
+        --jungle-bright: 0.85 0.15 85;
+        --jungle-accent: 0.75 0.18 85;
+        --jungle-muted: 0.50 0.08 145;
+        --jungle-success: 0.70 0.18 145;
+        
+        --chart-1: 0.65 0.18 145;
+        --chart-2: 0.70 0.15 85;
+        --chart-3: 0.60 0.12 45;
+        --chart-4: 0.75 0.18 120;
+        --chart-5: 0.68 0.16 165;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+    
+    kbd {
+        @apply inline-block;
+    }
+}
+
+@layer utilities {
+    .bg-jungle-dark {
+        background-color: oklch(var(--jungle-dark));
+    }
+    
+    .bg-jungle-card {
+        background-color: oklch(var(--jungle-card));
+    }
+    
+    .bg-jungle-accent {
+        background-color: oklch(var(--jungle-accent));
+    }
+    
+    .bg-jungle-bright {
+        background-color: oklch(var(--jungle-bright));
+    }
+    
+    .bg-jungle-success {
+        background-color: oklch(var(--jungle-success));
+    }
+    
+    .text-jungle-dark {
+        color: oklch(var(--jungle-dark));
+    }
+    
+    .text-jungle-light {
+        color: oklch(var(--jungle-light));
+    }
+    
+    .text-jungle-bright {
+        color: oklch(var(--jungle-bright));
+    }
+    
+    .text-jungle-accent {
+        color: oklch(var(--jungle-accent));
+    }
+    
+    .text-jungle-muted {
+        color: oklch(var(--jungle-muted));
+    }
+    
+    .text-jungle-success {
+        color: oklch(var(--jungle-success));
+    }
+    
+    .border-jungle-accent {
+        border-color: oklch(var(--jungle-accent));
+    }
+    
+    .hover\:bg-jungle-bright:hover {
+        background-color: oklch(var(--jungle-bright));
+    }
+    
+    .hover\:text-jungle-bright:hover {
+        color: oklch(var(--jungle-bright));
+    }
+}

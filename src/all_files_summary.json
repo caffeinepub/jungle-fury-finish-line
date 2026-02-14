@@ -1,0 +1,18 @@
+{
+  "backend/main.mo": "Empty Motoko canister actor with no functionality.",
+  "feature_evidence.json": "Metadata file listing feature evidence, affected files, components, and test IDs.",
+  "frontend-file-summaries.txt": "Contains prewritten summaries of various frontend files for reference.",
+  "frontend/index.css": "Empty stylesheet placeholder.",
+  "frontend/index.html": "HTML entry page that mounts the React app and loads main.tsx.",
+  "frontend/src/App.tsx": "Main React component managing game state, keyboard input, and rendering the HUD and canvas.",
+  "frontend/src/components/GameHUD.tsx": "HUD component displaying title, Internet Identity login controls, status messages, and start/restart actions.",
+  "frontend/src/game/assets.ts": "Utility for loading game image assets with fallback behavior.",
+  "frontend/src/game/JungleFuryCanvas.tsx": "Canvas renderer drawing the background, track, cars, obstacles, and finish line each frame.",
+  "frontend/src/game/useJungleFuryGame.ts": "React hook implementing simulation logic including movement, spawning, collisions, and game snapshots.",
+  "frontend/src/hooks/useActor.ts": "Hook that constructs an authenticated or anonymous backend actor and manages query invalidation.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides React context and hooks to manage Internet Identity authentication using AuthClient, including login, logout, and identity state handling.",
+  "frontend/src/index.css": "Defines Tailwind base styles and custom jungle-themed OKLCH color variables with utility classes for light and dark modes.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with QueryClientProvider and InternetIdentityProvider before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom OKLCH color mappings, typography, animations, and plugins for the project's jungle theme.",
+  "project_state.json": "Stores project metadata, feature requirements, issues, and architectural notes for the Jungle Fury game build."
+}

@@ -1,0 +1,69 @@
+{
+  "kind": "build_request",
+  "title": "Add Internet Identity sign-in UI to Jungle Fury game",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Add an Internet Identity authentication UI to the Jungle Fury game so a user can explicitly sign in and sign out from within the app.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "User: Sign in",
+          "User: Aap m bano"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The HUD includes a clearly labeled \"Sign in\" button when the user is anonymous.",
+        "Clicking \"Sign in\" calls the existing `useInternetIdentity().login()` flow (no custom auth implementation).",
+        "When the user is signed in, the HUD shows a \"Sign out\" button that calls `useInternetIdentity().clear()`.",
+        "The HUD shows a basic signed-in indicator (e.g., \"Signed in\" and the principal string or a shortened principal) when authenticated.",
+        "Authentication errors (from `loginStatus === \"loginError\"`) are displayed in the UI in English and are non-blocking to the rest of the app."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Ensure all user-facing HUD text is in English and remove emoji characters from the main title text.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Use English for any user-facing text in the build request."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The main game title renders as plain English text without emoji characters.",
+        "All newly added authentication UI labels and messages are in English."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui or other immutable paths listed in SYSTEM_CONTEXT.",
+    "Keep all backend logic in the single Motoko actor (backend/main.mo); do not introduce additional backend services.",
+    "Do not route or serve images through the backend; keep using static assets under frontend/public/assets/generated."
+  ],
+  "nonGoals": [
+    "Generate an Android APK/AAB or any Play Store publishing artifacts.",
+    "Implement any non-Internet-Identity third-party authentication provider.",
+    "Add new gameplay mechanics unrelated to authentication UI."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

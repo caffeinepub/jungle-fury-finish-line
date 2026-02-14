@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a 2D Pygame-based racing game app \"Jungle Fury: Finish Line\" based on the provided code (player car, AI cars, obstacles/rocks, moving finish line, win/lose conditions).",
+  "architectural_notes": [
+    "Use Python + Pygame to implement a 2D racing game: player-controlled car, AI cars, obstacle/rock spawning, collisions, and finish-line win condition.",
+    "Current deployment target is a web app (Internet Computer/URL). Android APK/AAB generation and Play Store packaging would require a separate native/mobile build pipeline outside the current deployment flow."
+  ],
+  "known_issues": [
+    "Deployment/public launch failing due to invalid domain format (contains ':'; domain must be 5–50 chars and only letters/numbers/hyphens)."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-playable-2d-racing-avoidance-game-in-the-react-typescript-frontend-that-recreates-the-core-mechanics-from-the-provided-pygame-code-player-controlled-yellow-car-on-a-brown-track-within-a-green-jungle-background-7-ai-cars-moving-down-the-track-random-falling-obstacles-animals-trees-and-side-rocks-a-moving-finish-line-win-lose-conditions",
+      "title": "Implement a playable 2D racing/avoidance game in the React (TypeScript) frontend that recreates the core mechanics from the provided Pygame code: player-controlled yellow car on a brown track within a green jungle background; 7 AI cars moving down the track; random falling obstacles (animals/trees) and side rocks; a moving finish line; win/lose conditions.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-game-ui-layer-around-the-gameplay-area-a-title-jungle-fury-finish-line-an-on-screen-control-hint-e-g-use-to-steer-and-a-status-area-showing-current-state-playing-game-over-you-won",
+      "title": "Add a simple game UI layer around the gameplay area: a title ('Jungle Fury: Finish Line'), an on-screen control hint (e.g., 'Use ← → to steer'), and a status area showing current state (Playing / Game Over / You Won).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-colors-typography-layout-suitable-for-a-jungle-racing-game-and-enforce-it-consistently-across-all-screens-components-avoiding-blue-purple-as-dominant-colors",
+      "title": "Apply a coherent visual theme (colors, typography, layout) suitable for a jungle racing game and enforce it consistently across all screens/components, avoiding blue/purple as dominant colors.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-static-image-assets-under-frontend-public-assets-generated-and-use-them-in-the-ui-game-rendering-no-backend-image-routing",
+      "title": "Add required static image assets under frontend/public/assets/generated and use them in the UI/game rendering (no backend image routing).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-internet-identity-authentication-ui-to-the-jungle-fury-game-so-a-user-can-explicitly-sign-in-and-sign-out-from-within-the-app",
+      "title": "Add an Internet Identity authentication UI to the Jungle Fury game so a user can explicitly sign in and sign out from within the app.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-user-facing-hud-text-is-in-english-and-remove-emoji-characters-from-the-main-title-text",
+      "title": "Ensure all user-facing HUD text is in English and remove emoji characters from the main title text.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create an app (runnable game) based on the provided Pygame code for \"Jungle Fury: Finish Line\"",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Provide an Android build (APK/AAB) suitable for Play Store publishing for the Jungle Fury: Finish Line game",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "2d",
+  "projectName": "Jungle Fury: Finish Line",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

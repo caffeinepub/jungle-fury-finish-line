@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-an-internet-identity-authentication-ui-to-the-jungle-fury-game-so-a-user-can-explicitly-sign-in-and-sign-out-from-within-the-app",
+      "featureTitle": "Add an Internet Identity authentication UI to the Jungle Fury game so a user can explicitly sign in and sign out from within the app.",
+      "files": [
+        "frontend/src/components/GameHUD.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-all-user-facing-hud-text-is-in-english-and-remove-emoji-characters-from-the-main-title-text",
+      "featureTitle": "Ensure all user-facing HUD text is in English and remove emoji characters from the main title text.",
+      "files": [
+        "frontend/src/components/GameHUD.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

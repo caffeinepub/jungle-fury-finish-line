@@ -1,0 +1,11 @@
+{
+  "frontend/src/App.tsx": "Main application component that manages game state (start/playing/gameOver/won), handles keyboard input for player controls, and renders the game canvas with HUD overlay and footer.",
+  "frontend/src/components/GameHUD.tsx": "Game heads-up display component showing title, Internet Identity sign-in/out controls with principal display, control instructions, current game status, authentication error messages, and Start/Restart buttons with appropriate icons and styling.",
+  "frontend/src/game/useJungleFuryGame.ts": "Custom React hook implementing the complete game simulation logic including player movement, AI cars, obstacle/rock spawning, collision detection, finish line progression, and game state management using refs and requestAnimationFrame.",
+  "frontend/src/game/JungleFuryCanvas.tsx": "Canvas-based renderer component that draws the jungle background, track, cars, obstacles, rocks, and finish line each frame with fallback to simple shapes if images fail to load.",
+  "frontend/src/game/assets.ts": "Asset loader utility that loads all game sprite images from the generated assets folder and provides fallback handling for failed image loads.",
+  "frontend/index.css": "Global stylesheet with OKLCH-based jungle theme color system (greens, browns, yellows) for both light and dark modes, custom utility classes for jungle colors, and base typography.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Inter font family and custom design tokens matching the jungle racing theme.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query and Internet Identity providers, imports global styles, and renders the root App component.",
+  "frontend/src/index.css": "Global stylesheet with OKLCH-based jungle theme color system (greens, browns, yellows) for both light and dark modes, custom utility classes for jungle colors, and base typography."
+}

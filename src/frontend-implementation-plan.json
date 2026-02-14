@@ -1,0 +1,40 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Internet Identity sign-in/out HUD for Jungle Fury",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Add Internet Identity sign-in/out controls and authenticated status indicator to the in-game HUD using the existing useInternetIdentity hook.",
+      "acceptanceCriteria": [
+        "The HUD includes a clearly labeled \"Sign in\" button when the user is anonymous.",
+        "Clicking \"Sign in\" calls the existing `useInternetIdentity().login()` flow (no custom auth implementation).",
+        "When the user is signed in, the HUD shows a \"Sign out\" button that calls `useInternetIdentity().clear()`.",
+        "The HUD shows a basic signed-in indicator (e.g., \"Signed in\" and the principal string or a shortened principal) when authenticated.",
+        "Authentication errors (from `loginStatus === \"loginError\"`) are displayed in the UI in English and are non-blocking to the rest of the app."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/GameHUD.tsx",
+          "operation": "modify",
+          "description": "Integrate Internet Identity UI into the HUD by consuming `useInternetIdentity()` to: (1) detect anonymous vs authenticated state, (2) render a clearly labeled \"Sign in\" button that calls `login()`, (3) render a \"Sign out\" button that calls `clear()`, (4) display a signed-in indicator including the user's principal (full or shortened), and (5) show a non-blocking English error message when `loginStatus === \"loginError\"` (e.g., from `loginError`)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Ensure HUD user-facing text is English and remove emojis from the main game title.",
+      "acceptanceCriteria": [
+        "The main game title renders as plain English text without emoji characters.",
+        "All newly added authentication UI labels and messages are in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/GameHUD.tsx",
+          "operation": "modify",
+          "description": "Update the main HUD title to remove emoji characters and ensure it renders as plain English text; also verify all authentication-related labels/messages added for sign-in/out and error display are English-only."
+        }
+      ]
+    }
+  ]
+}

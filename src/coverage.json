@@ -1,0 +1,49 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T02:34:08.281Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-5",
+        "summary": "Add an Internet Identity authentication UI to the Jungle Fury game so a user can explicitly sign in and sign out from within the app.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/GameHUD.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/GameHUD.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Ensure all user-facing HUD text is in English and remove emoji characters from the main title text.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/GameHUD.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/GameHUD.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/GameHUD.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
